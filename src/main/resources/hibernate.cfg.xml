@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+		
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://162.222.225.172:3306/voti1_CYGNUS</property>
+		<property name="hibernate.connection.username">voti1_VUSER</property>
+		<property name="hibernate.connection.password">xK3khk7490n3</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">false</property>
+		<property name="format_sql">true</property>
+		
+		<property name="current_session_context_class">thread</property>
+		
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<mapping package="com.voti.model"/>
+
+
+		
+		<mapping class="com.voti.model.SNCTI"/>
+	    <mapping class="com.voti.model.Empresa" />
+	    <mapping class="com.voti.model.FuenteInformacion" />
+	    <mapping class="com.voti.model.Obstaculo" />	    
+		<mapping class="com.voti.model.EmpresaFuente"/>
+		<mapping class="com.voti.model.EmpresaObstaculo"/>
+		<mapping class="com.voti.model.EmpresaSncti"/>
+		
+		
+		<mapping class="com.voti.model.Proyecto"/>
+		<mapping class="com.voti.model.Oferente"/>
+		<mapping class="com.voti.model.SitioDocumentos"/>
+		<mapping class="com.voti.model.ProyectoOferente"/>
+		<mapping class="com.voti.model.ProyectoSitio"/>
+		
+		
+		<mapping class="com.voti.model.Usuario"/>
+		<mapping class="com.voti.model.Ocde"/>
+		<mapping class="com.voti.model.UsuarioOcde"/>
+		<mapping class="com.voti.model.UsuarioEmpresa"/>
+		<mapping class="com.voti.model.UsuarioGrupo"/>
+		<mapping class="com.voti.model.SitioDocumentos"/>
+		
+		
+		<mapping class="com.voti.model.Institucion"/>	
+		<mapping class="com.voti.model.InstitucionOcde"/>	
+		<mapping class="com.voti.model.GrupoInvestigacion"/>
+		<mapping class="com.voti.model.OferenteOcde"/>
+		<mapping class="com.voti.model.PropiedadIntelectual"/>
+		<mapping class="com.voti.model.GranOcde"/>
+		<mapping class="com.voti.model.GranOcdeGrupo"/>
+		
+		
+		
+
+
+
+	</session-factory>
+</hibernate-configuration>
